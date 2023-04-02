@@ -24,30 +24,5 @@ const styles = StyleSheet.create({
         padding:10,
         marginTop:50
     },
-    containerCard:{
-        flexDirection:'row',
-        width:'90%',
-        backgroundColor:'#FDF4E7',
-        borderRadius:15,
-        height:'15%'
-    },
-    imageCard:{
-        width:'30%',
-        height:'80%',
-        backgroundColor:'white',
-        marginTop:12,
-        borderRadius:15,
-        marginLeft:15
-    },
-    infoCard:{
-        justifyContent:'center',
-        marginLeft:20,
-        width:'50%'
-    },
-    text:{
-        fontSize:15,
-        color:'black',
-        padding:2
-    }
 })
 export default styles;

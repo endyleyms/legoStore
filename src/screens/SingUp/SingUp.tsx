@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Pressable, SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import styles from './styles';
 
-const SingUp = () => {
+const SingUp = ({navigation}) => {
     const [name, setName] = useState('');
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.create}>CREATE A NEW ACCOUNT</Text>
-            <TouchableOpacity><Text style={styles.login}>Already registered? Log in here</Text></TouchableOpacity>
+            <TouchableOpacity  onPress={() => navigation.navigate('LogIn')}><Text style={styles.login}>Already registered? Log in here</Text></TouchableOpacity>
             {/* Form container */}
                 <View style={styles.containerForm}>
                     <Text style={styles.text}>NAME</Text>
@@ -33,9 +33,9 @@ const SingUp = () => {
                         placeholderTextColor={'#4D4C4C'}
                         style={styles.input} />
                 <View style={styles.containerButton}>
-                    <Pressable style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
                         <Text style={styles.textButton}>Sing Up</Text>
-                    </Pressable>
+                    </TouchableOpacity>
                 </View>
                 </View>
         </SafeAreaView>

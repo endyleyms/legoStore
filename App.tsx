@@ -8,6 +8,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import Store from './src/screens/Store/Store';
 import Login from './src/screens/Login/Login';
 import SingUp from './src/screens/SingUp/SingUp';
+import ProductDetail from './src/screens/ProductDetail/ProductDetail';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,7 +38,7 @@ function Home() {
         options={{
           title: 'Store',
           headerStyle: {
-            backgroundColor: '#BCD4BF',
+            backgroundColor: '#FFBD59',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -57,36 +58,49 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator >
           <Stack.Screen
-          name="SingUp"
-          component={SingUp}
-          options={{
-            title: 'Sing Up',
-            headerStyle: {
-              backgroundColor: '#FFBD59',
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-              fontWeight: 'bold',
-            },
-          }} />
-           <Stack.Screen
-          name="Log In"
-          component={Login}
-          options={{
-            title: 'Login',
-            headerStyle: {
-              backgroundColor: '#FFBD59',
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-              fontWeight: 'bold',
-            },
-          }} />
+            name="SingUp"
+            component={SingUp}
+            options={{
+              title: 'SingUp',
+              headerStyle: {
+                backgroundColor: '#FFBD59',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }} />
+          <Stack.Screen
+            name="LogIn"
+            component={Login}
+            options={{
+              title: 'LogIn',
+              headerStyle: {
+                backgroundColor: '#FFBD59',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }} />
           <Stack.Screen
             name="Home"
             component={Home}
             options={{ headerShown: false }}
           />
+          <Stack.Screen
+            name="ProductDetail"
+            component={ProductDetail}
+            options={{
+              title: 'ProductDetail',
+              headerStyle: {
+                backgroundColor: '#FFBD59',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
