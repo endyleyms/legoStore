@@ -1,7 +1,6 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaView, StyleSheet, useColorScheme } from 'react-native';
+import { NavigationContainer, DarkTheme, DefaultTheme,} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -53,9 +52,11 @@ function Home() {
 
 const Stack = createNativeStackNavigator();
 export default function App() {
+  const theme = useColorScheme();
+  const isDarkTheme = theme === 'dark';
   return (
     <SafeAreaView style={styles.container}>
-      <NavigationContainer>
+      <NavigationContainer theme={theme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack.Navigator >
           <Stack.Screen
             name="SingUp"
