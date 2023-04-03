@@ -2,7 +2,7 @@ const API_URL = 'https://1be9db56-c889-466d-9c12-cba178414901.mock.pstmn.io/';
 
 export const listAll = async () => {
     try {
-        const response = await fetch(`${API_URL}/all-products`);
+        const response = await fetch(`${API_URL}all-products`);
         const all = await response.json();
         return all;
       } catch {
@@ -12,7 +12,7 @@ export const listAll = async () => {
 
 export const getOne = async (id) => {
     try {
-      const response = await fetch(`${API_URL}/detail/${id}`);
+      const response = await fetch(`${API_URL}detail/${id}`);
       const get = await response.json();
       return get;
     } catch (error) {
@@ -29,7 +29,7 @@ export const addOne = async (newRegister) => {
             },
             body: JSON.stringify(newRegister),
           };
-        const response = await fetch(`${API_URL}/buy`, payload);
+        const response = await fetch(`${API_URL}buy`, payload);
         const add = await response.json();
         return add;
     } catch (error) {

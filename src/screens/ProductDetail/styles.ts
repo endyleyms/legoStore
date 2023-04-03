@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     },
     shoppingCart:{
         position:'absolute',
-        left:365,
+        left:360,
         top:5,
         color:'white',
         backgroundColor:'#9C9B7A',
@@ -29,6 +29,20 @@ const styles = StyleSheet.create({
         height:'50%',
         backgroundColor:'#FDF4E7',
         borderRadius: 20
-    }
+    },
+    circleCart:{
+        position:'absolute',
+        left:380,
+        top:28,
+        width:20,
+        height:20,
+        backgroundColor:'red',
+        borderRadius:20,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    textCircle:{
+        color: 'white'
+    },
 })
 export default styles;

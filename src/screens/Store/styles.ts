@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     },
     shoppingCart:{
         position:'absolute',
-        left:365,
+        left:360,
         top:5,
         color:'white',
         backgroundColor:'#9C9B7A',
@@ -16,6 +16,20 @@ const styles = StyleSheet.create({
         height:'4.5%',
         width:'10%',
         padding:5
+    },
+    circleCart:{
+        position:'absolute',
+        left:380,
+        top:28,
+        width:20,
+        height:20,
+        backgroundColor:'red',
+        borderRadius:20,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    textCircle:{
+        color: 'white'
     },
     containerGeneral:{
         paddingBottom:10
@@ -26,7 +40,7 @@ const styles = StyleSheet.create({
         width:width,
         height:'100%',
         alignItems:'center',
-        marginTop:100
+        marginTop:60
     },
     flatList:{
         height:'100%',
@@ -37,7 +51,7 @@ const styles = StyleSheet.create({
         width:'100%',
         backgroundColor:'#FDF4E7',
         borderRadius:15,
-        height:100,
+        height:120,
     },
     imageCard:{
         width:'30%',
@@ -56,6 +70,45 @@ const styles = StyleSheet.create({
         fontSize:15,
         color:'black',
         padding:2
+    },
+    detailShop:{
+        flexDirection:'row',
+        justifyContent:'space-between'
+    },
+    detailView:{
+        backgroundColor:'#9C9B7A',
+        borderRadius: 10,
+        width:'50%',
+        height:30,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    unableDetailView:{
+        backgroundColor:'#e5e5e5',
+        borderRadius: 10,
+        width:'50%',
+        height:30,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    textDetail:{
+        color:'white'
+    },
+    shoppingCard:{
+        backgroundColor:'#9C9B7A',
+        width:35,
+        height:35,
+        borderRadius:20,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    unableShoppingCard:{
+        backgroundColor:'#e5e5e5',
+        width:35,
+        height:35,
+        borderRadius:20,
+        justifyContent:'center',
+        alignItems:'center'
     }
 })
 export default styles;
