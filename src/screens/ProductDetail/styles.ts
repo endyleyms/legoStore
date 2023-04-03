@@ -44,5 +44,25 @@ const styles = StyleSheet.create({
     textCircle:{
         color: 'white'
     },
+    AddToCart:{
+        flexDirection:'row',
+        backgroundColor:'#9C9B7A',
+        height:40,
+        width:180,
+        justifyContent:'space-between',
+        alignItems:'center',
+        borderRadius:20,
+        padding:10
+    },
+    unableAddToCart:{
+        flexDirection:'row',
+        backgroundColor:'#e5e5e5',
+        height:40,
+        width:180,
+        justifyContent:'space-between',
+        alignItems:'center',
+        borderRadius:20,
+        padding:10
+    }
 })
 export default styles;

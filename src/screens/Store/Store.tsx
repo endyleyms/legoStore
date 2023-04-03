@@ -49,7 +49,7 @@ const Store = ({ navigation }) => {
     }
     useEffect(() => {
         fetchProducts();
-    }, []);
+    }, [shopping]);
 
     return (
         <View style={styles.safeArea}>
