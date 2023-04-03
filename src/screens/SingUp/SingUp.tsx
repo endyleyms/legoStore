@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import styles from './styles';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
-import firebaseModule from '../../../firebase';
+import firebaseModule from '../../../Services/firebase';
 
 const SingUp = ({navigation}) => {
     const [name, setName] = useState('');

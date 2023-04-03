@@ -16,20 +16,23 @@ const styles = StyleSheet.create({
         width:'10%',
         padding:5
     },
+    containerGeneral:{
+        height:'25%',
+        // backgroundColor:'red'
+    },
     container:{
         backgroundColor:'white',
         width:width,
         height:height,
         alignItems:'center',
-        padding:10,
-        marginTop:50
+        // padding:10,
     },
     containerCard:{
         flexDirection:'row',
         width:'90%',
         backgroundColor:'#FDF4E7',
         borderRadius:15,
-        height:'15%'
+        height:90,
     },
     imageCard:{
         width:'30%',

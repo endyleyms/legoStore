@@ -24,5 +24,11 @@ const styles = StyleSheet.create({
         padding:10,
         marginTop:50
     },
+    image:{
+        width:'90%',
+        height:'50%',
+        backgroundColor:'#FDF4E7',
+        borderRadius: 20
+    }
 })
 export default styles;
