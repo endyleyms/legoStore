@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Pressable, SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import styles from './styles';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 import firebaseModule from '../../../firebase';
@@ -16,7 +16,7 @@ const SingUp = ({navigation}) => {
           displayName: name
         })
         navigation.navigate('Home')
-      }
+    }
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.create}>CREATE A NEW ACCOUNT</Text>
