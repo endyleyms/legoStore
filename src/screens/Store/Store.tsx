@@ -40,7 +40,7 @@ const Store = ({navigation})=>{
                 data={product}
                 renderItem={({item}) => <CardProduct navigation={navigation} product={item} id={item?.id} />}
                 keyExtractor={item => item.id}
-                // style={styles.flatList}
+                style={styles.flatList}
                 />
             </View>
         </View>

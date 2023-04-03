@@ -4,6 +4,7 @@ const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
     safeArea:{
         backgroundColor:'white',
+        height:height
     },
     shoppingCart:{
         position:'absolute',
@@ -17,22 +18,26 @@ const styles = StyleSheet.create({
         padding:5
     },
     containerGeneral:{
-        height:'25%',
-        // backgroundColor:'red'
+        paddingBottom:10
     },
     container:{
         backgroundColor:'white',
+        justifyContent:'space-around',
         width:width,
-        height:height,
+        height:'100%',
         alignItems:'center',
-        // padding:10,
+        marginTop:100
+    },
+    flatList:{
+        height:'100%',
+        width:'90%'
     },
     containerCard:{
         flexDirection:'row',
-        width:'90%',
+        width:'100%',
         backgroundColor:'#FDF4E7',
         borderRadius:15,
-        height:90,
+        height:100,
     },
     imageCard:{
         width:'30%',
