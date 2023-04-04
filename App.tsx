@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, useColorScheme } from 'react-native';
-import { NavigationContainer, DarkTheme, DefaultTheme,} from '@react-navigation/native';
+import { NavigationContainer, DarkTheme, DefaultTheme, useNavigation,} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -9,9 +9,12 @@ import Login from './src/screens/Login/Login';
 import SingUp from './src/screens/SingUp/SingUp';
 import ProductDetail from './src/screens/ProductDetail/ProductDetail';
 
+
+
 const Tab = createBottomTabNavigator();
 
 function Home() {
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -52,6 +55,7 @@ function Home() {
 
 const Stack = createNativeStackNavigator();
 export default function App() {
+
   const theme = useColorScheme();
   const isDarkTheme = theme === 'dark';
   return (

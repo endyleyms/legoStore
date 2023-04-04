@@ -3,8 +3,10 @@ import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-nat
 import styles from './styles';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 import firebaseModule from '../../../Services/firebase';
+// import { auth } from 'firebase/app';
 
 const SingUp = ({navigation}) => {
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPasswor] = useState('');

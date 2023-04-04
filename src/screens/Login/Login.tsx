@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import styles from './styles';
-import { getAuth, signInWithEmailAndPassword, } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import firebaseModule from '../../../Services/firebase';
 
 const Login = ({navigation})=>{
@@ -51,8 +51,8 @@ const Login = ({navigation})=>{
                     placeholderTextColor={'#4D4C4C'}
                     style={styles.input} />
                 <View style={styles.containerButton}>
-                    {/* <TouchableOpacity style={styles.button} onPress={handleSigIn}> */}
-                    <TouchableOpacity style={styles.button} onPress={()=> navigation.navigate('Home')}>
+                    <TouchableOpacity style={styles.button} onPress={handleSigIn}>
+                    {/* <TouchableOpacity style={styles.button} onPress={()=> navigation.navigate('Home')}> */}
                         <Text style={styles.textButton}>Login</Text>
                     </TouchableOpacity>
                 </View>

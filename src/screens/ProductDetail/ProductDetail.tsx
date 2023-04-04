@@ -7,18 +7,18 @@ import { addOne, getOne } from '../../../Services/alternovaStore'
 
 const ProductDetail = ({ route }) => {
     const [product, setProduct] = useState<any>([]);
-    // const { id, shopping, } = route?.params;
+    const { id, shopping, } = route?.params;
     const [_shopping, setShopping] = useState<number>(1);
     const [modal, setModal] = useState<boolean>(false);
      const [modalShop, setModalShop] = useState<boolean>(false);
 
-    // const fetchProduct = async () => {
-    //     const data= await getOne (id);
-    //     setProduct(data);
-    // }
-    // useEffect(()=>{
-    //     fetchProduct();
-    // }, [id])
+    const fetchProduct = async () => {
+        const data= await getOne (id);
+        setProduct(data);
+    }
+    useEffect(()=>{
+        fetchProduct();
+    }, [id])
 
     const shopProduct = async()=>{
         await addOne();

@@ -71,7 +71,7 @@ const Store = ({ navigation }) => {
     }, [shopping, idProduct]);
 
     const shopProduct = async()=>{
-        // await addOne();
+        await addOne(idProduct);
         setModal(false);
         setModalShop(true);
     }
