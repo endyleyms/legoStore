@@ -6,15 +6,28 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
     },
     shoppingCart:{
-        position:'absolute',
         left:360,
         top:5,
         color:'white',
         backgroundColor:'#9C9B7A',
         borderRadius:20,
-        height:'4.5%',
+        height:40,
         width:'10%',
         padding:5
+    },
+    circleCart:{
+        position:'absolute',
+        left:380,
+        top:28,
+        width:20,
+        height:20,
+        backgroundColor:'red',
+        borderRadius:20,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    textCircle:{
+        color: 'white'
     },
     container:{
         backgroundColor:'white',
@@ -70,6 +83,37 @@ const styles = StyleSheet.create({
         alignItems:'center',
         borderRadius:20,
         padding:10
+    },
+    modalContainer:{
+        backgroundColor:'#dad7cd',
+        width: '95%',
+        height:'80%',
+        marginTop:100,
+        marginLeft: 10,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:20
+    },
+    containerCardModal:{
+        flexDirection:'row',
+        justifyContent:'center',
+        width:'90%',
+        height:'30%',
+        borderRadius:15,
+        alignItems:'center',
+        borderWidth: 0.5,
+        borderColor: 'gray'
+    },
+    imageCardModal:{
+        width:'40%',
+        height:'70%',
+        backgroundColor:'white',
+        borderRadius:15,
+    },
+    closeModal:{
+        position:'absolute',
+        top: 10,
+        right:10
     }
 })
 export default styles;

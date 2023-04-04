@@ -43,14 +43,14 @@ const Store = ({ navigation }) => {
     const [shopping, setShopping] = useState();
     const [modal, setModal] = useState(false);
 
-    const fetchProducts = async () => {
-        const data = await listAll();
-        console.log('data', data)
-        setProduct(data.products);
-    }
-    useEffect(() => {
-        fetchProducts();
-    }, [shopping]);
+    // const fetchProducts = async () => {
+    //     const data = await listAll();
+    //     console.log('data', data)
+    //     setProduct(data.products);
+    // }
+    // useEffect(() => {
+    //     fetchProducts();
+    // }, [shopping]);
 
     return (
         <View style={styles.safeArea}>
