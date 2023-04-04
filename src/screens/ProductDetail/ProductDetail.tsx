@@ -31,10 +31,12 @@ const ProductDetail = ({route})=>{
             <View style={styles.container}>
                 {/* <Text>Produc detail</Text> */}
                 <Image  source={{uri: product?.image}} style={styles.image}/>
-                <Text>{product?.name}</Text>
-                <Text>Precio: {product?.unit_price}</Text>
-                <Text>Stock: {product?.stock}</Text>
-                <Text> {product?.description}</Text>
+                <View style={styles.containerDetail}>
+                    <Text>{product?.name}</Text>
+                    <Text>Precio: {product?.unit_price}</Text>
+                    <Text>Stock: {product?.stock}</Text>
+                    <Text> {product?.description}</Text>
+                </View>
                 {product?.stock === 0 ?
                 <View style={styles.unableAddToCart}>
                     <Text style={{color:'white'}}>Add a product to cart</Text>

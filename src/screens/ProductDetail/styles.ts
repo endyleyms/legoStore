@@ -24,9 +24,15 @@ const styles = StyleSheet.create({
         padding:10,
         marginTop:50
     },
+    containerDetail:{
+        width:'90%',
+        justifyContent:'center',
+        alignItems:'center',
+        padding:10,
+    },
     image:{
         width:'90%',
-        height:'50%',
+        height:'40%',
         backgroundColor:'#FDF4E7',
         borderRadius: 20
     },
@@ -52,7 +58,8 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
         alignItems:'center',
         borderRadius:20,
-        padding:10
+        padding:10,
+        marginTop:30
     },
     unableAddToCart:{
         flexDirection:'row',
