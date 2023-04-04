@@ -131,7 +131,6 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         borderRadius:20,
-        opacity:0.4,
     }
 })
 export default styles;
