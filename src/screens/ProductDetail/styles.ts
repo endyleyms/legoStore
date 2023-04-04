@@ -49,20 +49,6 @@ const styles = StyleSheet.create({
         backgroundColor:'#FDF4E7',
         borderRadius: 20
     },
-    circleCart:{
-        position:'absolute',
-        left:380,
-        top:28,
-        width:20,
-        height:20,
-        backgroundColor:'red',
-        borderRadius:20,
-        justifyContent:'center',
-        alignItems:'center'
-    },
-    textCircle:{
-        color: 'white'
-    },
     AddToCart:{
         flexDirection:'row',
         backgroundColor:'#9C9B7A',
@@ -96,7 +82,7 @@ const styles = StyleSheet.create({
     },
     containerCardModal:{
         flexDirection:'row',
-        justifyContent:'center',
+        justifyContent:'space-evenly',
         width:'90%',
         height:'30%',
         borderRadius:15,
@@ -114,6 +100,38 @@ const styles = StyleSheet.create({
         position:'absolute',
         top: 10,
         right:10
+    },
+    detailView:{
+        backgroundColor:'#9C9B7A',
+        borderRadius: 10,
+        width:100,
+        height:30,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    textDetail:{
+        color:'white'
+    },
+    infoCard:{
+        justifyContent:'center',
+        marginLeft:20,
+        width:'50%'
+    },
+    text:{
+        fontSize:15,
+        color:'black',
+        padding:2
+    },
+    modalContainerShop:{
+        backgroundColor:'#dad7cd',
+        width: '60%',
+        height:'20%',
+        marginTop:300,
+        marginLeft: 80,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:20,
+        opacity:0.4,
     }
 })
 export default styles;

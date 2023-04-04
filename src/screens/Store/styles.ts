@@ -140,6 +140,17 @@ const styles = StyleSheet.create({
         position:'absolute',
         top: 10,
         right:10
+    },
+    modalContainerShop:{
+        backgroundColor:'#dad7cd',
+        width: '60%',
+        height:'20%',
+        marginTop:300,
+        marginLeft: 80,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:20,
+        opacity:0.4,
     }
 })
 export default styles;
