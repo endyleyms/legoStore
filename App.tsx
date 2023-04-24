@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { NavigationContainer, DarkTheme, DefaultTheme, } from '@react-navigation/native';
 import { SafeAreaView, StyleSheet, useColorScheme } from 'react-native';
-import { NavigationContainer, DarkTheme, DefaultTheme, useNavigation,} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
